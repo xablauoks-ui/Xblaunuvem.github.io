@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Meu site</title>
+<title>Meu site de jogos</title>
 </head>
 
 <body>
 
-<h1>Meu primeiro site</h1>
-<p>Site criado no GitHub</p>
+<h1>🎮 Meu primeiro jogo</h1>
+<p>Clique no botão para ganhar pontos!</p>
+
+<p>Pontos: <span id="pontos">0</span></p>
+
+<button onclick="ganharPonto()">Clique aqui</button>
+
+<script>
+let pontos = 0;
+
+function ganharPonto(){
+pontos = pontos + 1;
+document.getElementById("pontos").innerText = pontos;
+}
+</script>
 
 </body>
 </html>
